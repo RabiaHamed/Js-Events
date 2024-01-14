@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!---------------------------------------Task 1------------------------- -->
+     <div class="alert">
+    <a href="JavaScript:void(0)" class="Click"  onClick="alert('Hi');" >Click</a> </div>
+
+    <!---------------------------------------Task 2------------------------- -->
+    <div class="img">
+        <div class="img1">
+    <a href="JavaScript:void(0)" onClick="alert('Thanks for purchasing a phone from us ');"><img src="img/images m3.jpeg" alt="" srcset="">
+        <h2>Phone</h2> </a>   </div>
+        <div class="img2">
+    <a href="JavaScript:void(0)" onClick="alert('Thanks for purchasing a phone from us');"><img src="img/images m3.jpeg" alt="" srcset="">
+        <h2>Phone</h2> </a> </div>
+        <div class="img3">                  
+    <a href="JavaScript:void(0)" onClick="alert('Thanks for purchasing a phone from us');"><img src="img/images m3.jpeg" alt="" srcset="">
+        <h2>Phone</h2> </a>  </div>
+        <div class="img4">
+    <a href="JavaScript:void(0)" onClick="alert('Thanks for purchasing a phone from us');"><img src="img/images m3.jpeg"
+         alt="" srcset=""><h2>Phone</h2> </a> </div>                           
+</div>
+ 
+    <!---------------------------------------Task 3------------------------- -->
+        <table>
+            <tr>
+                <th>S:No#</th>
+                <th>Name</th>
+                <th>Number</th>
+                <th>Delete Button</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>Jhone</td>
+                <td>10</td>
+                <td class="del" ><button onclick="remove(this)">Delete</button></td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Doe</td>
+                <td>9</td>
+                <td class="del"><button onclick="remove(this)">Delete</button></td>
+            </tr>
+          
+            <tr>
+                <td>2</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td class="del"><button onclick="remove(this)">Delete</button></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>James</td>
+                <td>8</td>
+                <td class="del"><button onclick="remove(this)">Delete</button></td>
+            </tr>
+
+        </table>
+
+    <!---------------------------------------Task 4------------------------- -->
+      <img src="img/photography-of-pink-flower-with-green-leaves-during-day-time-lotus-lotus-wallpaper-preview.jpg" style="width: 40%; height: 500px;"
+     onmouseover="src='img/e75ddbda351d44e24b6b8099fa200aad.jpg'" onmouseout="src='img/photography-of-pink-flower-with-green-leaves-during-day-time-lotus-lotus-wallpaper-preview.jpg'">
+
+    <!---------------------------------------Task 5--------------------------->
+    <div class="countainer">
+        <label id="countNum">0</label><br>
+        <button onclick="incr()" id="increaseBtn">Increase</button>
+        <button onclick="res()" id="restBtn">Rest</button>
+        <button onclick="dec()" id="decreaseBtn">Decrease</button>
+    </div>
+
+
+
+
+
+
+
+<script>
+    var count = 0;
+
+    // document.getElementById("increaseBtn").value;
+
+    function incr() {
+        count +=1;
+        document.getElementById("countNum").innerHTML = count;
+    }
+
+    function dec() {
+        count -=1;
+        document.getElementById("countNum").innerHTML = count;
+    }
+    function res() {
+        count = 0;
+        document.getElementById("countNum").innerHTML = count;
+    }
+
+// **********************************//
+    function remove(hide) {
+        hide.parentNode.parentNode.style.display = 'none';  
+    }
+</script>
+
+
+
+</body>
+</html>
